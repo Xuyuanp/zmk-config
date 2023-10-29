@@ -36,12 +36,12 @@
         };
 
         copy {
-            bindings = <&kp K_COPY>;
+            bindings = <&kp C_AC_COPY>;
             key-positions = <26 27>;
         };
 
         paste {
-            bindings = <&kp K_PASTE>;
+            bindings = <&kp C_AC_PASTE>;
             key-positions = <27 28>;
         };
     };
