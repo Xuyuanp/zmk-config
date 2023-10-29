@@ -57,10 +57,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB                  &kp Q         &kp W       &kp E     &kp R        &kp T           &kp Y            &kp U      &kp I      &kp O            &kp P             &kp MINUS
-&mt RCTRL EQUAL          &kp A         &kp S       &kp D     &kp F        &kp G           &kp H            &kp J      &kp K      &kp L            &kp SEMI          &mt RCTRL SINGLE_QUOTE
-&mt LEFT_GUI LEFT_BRACE  &mt LSHIFT Z  &mt LALT X  &kp C     &kp V        &kp B           &kp N            &kp M      &kp COMMA  &mt LALT PERIOD  &mt RSHIFT SLASH  &mt RIGHT_WIN RIGHT_BRACE
-                                                   &kp LGUI  &lt 2 ENTER  &lt 3 ESCAPE    &lt 2 BACKSPACE  &kp SPACE  &kp RALT
+&kp TAB                    &kp Q         &kp W       &kp E     &kp R        &kp T           &kp Y            &kp U      &kp I      &kp O            &kp P             &kp MINUS
+&mt RCTRL EQUAL            &kp A         &kp S       &kp D     &kp F        &kp G           &kp H            &kp J      &kp K      &kp L            &kp SEMI          &mt RCTRL SINGLE_QUOTE
+&mt LEFT_GUI LEFT_BRACKET  &mt LSHIFT Z  &mt LALT X  &kp C     &kp V        &kp B           &kp N            &kp M      &kp COMMA  &mt LALT PERIOD  &mt RSHIFT SLASH  &mt RIGHT_WIN RIGHT_BRACKET
+                                                     &kp LGUI  &lt 2 ENTER  &lt 3 ESCAPE    &lt 1 BACKSPACE  &kp SPACE  &kp RALT
             >;
         };
 
