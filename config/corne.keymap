@@ -40,7 +40,7 @@
     behaviors {
         hml: hml {
             compatible = "zmk,behavior-hold-tap";
-            label = "HML";
+            label = "HOME_ROW_LEFT";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -53,7 +53,7 @@
         };
         hmr: hmr {
             compatible = "zmk,behavior-hold-tap";
-            label = "HMR";
+            label = "HOME_ROW_RIGHT";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -66,7 +66,7 @@
         };
         thumb_lt: thumb_lt {
             compatible = "zmk,behavior-hold-tap";
-            label = "THUMB_LT";
+            label = "THUMB_LAYER_TAP";
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
@@ -77,7 +77,7 @@
         };
         c_const: c_const {
             compatible = "zmk,behavior-caps-word";
-            label = "C_CONST";
+            label = "C_STYLE_CONST";
             #binding-cells = <0>;
             continue-list = <UNDERSCORE>;
             mods = <(MOD_LSFT)>;
@@ -88,12 +88,6 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
-
             bindings = <
 &kp TAB           &kp Q                 &kp W             &kp E     &kp R              &kp T                 &kp Y                  &kp U      &kp I      &kp O             &kp P                         &kp MINUS
 &kp EQUAL         &hml RIGHT_CONTROL A  &hml RIGHT_ALT S  &kp D     &kp F              &kp G                 &kp H                  &kp J      &kp K      &hmr RIGHT_ALT L  &hmr RIGHT_CONTROL SEMICOLON  &kp APOS
@@ -103,12 +97,6 @@
         };
 
         num_layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
             bindings = <
 &trans  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5          &kp F6        &kp F7        &kp F8        &kp F9        &kp F10       &trans
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
@@ -118,12 +106,6 @@
         };
 
         sym_layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
             bindings = <
 &kp TAB    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
 &kp LCTRL  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
