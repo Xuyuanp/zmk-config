@@ -36,6 +36,16 @@
             bindings = <&kp DEL>;
             key-positions = <9 8>;
         };
+
+        left-bracket {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <19 20>;
+        };
+
+        right-bracket {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <20 21>;
+        };
     };
 
     behaviors {
@@ -90,9 +100,9 @@
 
         default_layer {
             bindings = <
-&kp TAB           &kp Q                 &kp W             &kp E     &kp R              &kp T                 &kp Y                  &kp U      &kp I      &kp O             &kp P                         &kp MINUS
-&kp EQUAL         &hml RIGHT_CONTROL A  &hml RIGHT_ALT S  &kp D     &kp F              &kp G                 &kp H                  &kp J      &kp K      &hmr RIGHT_ALT L  &hmr RIGHT_CONTROL SEMICOLON  &kp APOS
-&kp LEFT_BRACKET  &hml LEFT_SHIFT Z     &kp X             &kp C     &kp V              &kp B                 &kp N                  &kp M      &kp COMMA  &kp PERIOD        &hmr RIGHT_SHIFT SLASH        &kp RIGHT_BRACKET
+&kp TAB           &kp Q                 &kp W             &kp E     &kp R              &kp T                 &kp Y                  &kp U      &kp I      &kp O                  &kp P                         &kp MINUS
+&kp EQUAL         &hml RIGHT_CONTROL A  &hml RIGHT_ALT S  &kp D     &kp F              &kp G                 &kp H                  &kp J      &kp K      &hmr RIGHT_ALT L       &hmr RIGHT_CONTROL SEMICOLON  &kp APOS
+&kp LEFT_BRACKET  &hml LEFT_SHIFT Z     &hml LEFT_GUI X   &kp C     &kp V              &kp B                 &kp N                  &kp M      &kp COMMA  &hmr RIGHT_GUI PERIOD  &hmr RIGHT_SHIFT SLASH        &kp RIGHT_BRACKET
                                                           &kp LGUI  &thumb_lt 2 ENTER  &thumb_lt 3 ESCAPE    &thumb_lt 1 BACKSPACE  &kp SPACE  &c_const
             >;
         };
