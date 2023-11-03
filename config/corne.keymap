@@ -14,15 +14,9 @@
     combos {
         compatible = "zmk,combos";
 
-        esc {
-            bindings = <&kp ESCAPE>;
-            key-positions = <2 3>;
-            require-prior-idle-ms = <50>;
-        };
-
         tab {
             bindings = <&kp TAB>;
-            key-positions = <3 4>;
+            key-positions = <3 2>;
             require-prior-idle-ms = <50>;
         };
 
@@ -37,14 +31,34 @@
             key-positions = <9 8>;
         };
 
-        left-bracket {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <19 20>;
+        minus {
+            bindings = <&kp MINUS>;
+            key-positions = <20 21>;
         };
 
-        right-bracket {
+        equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <20 19>;
+        };
+
+        left_bracket {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <31 32>;
+        };
+
+        right_bracket {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <20 21>;
+            key-positions = <32 33>;
+        };
+
+        grave {
+            bindings = <&kp GRAVE>;
+            key-positions = <3 4>;
+        };
+
+        backslash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <3 16>;
         };
     };
 
@@ -90,7 +104,7 @@
             compatible = "zmk,behavior-caps-word";
             label = "C_STYLE_CONST";
             #binding-cells = <0>;
-            continue-list = <UNDERSCORE>;
+            continue-list = <UNDERSCORE BACKSPACE>;
             mods = <(MOD_LSFT)>;
         };
     };
