@@ -122,10 +122,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "AWM_SUPER";
             #binding-cells = <0>;
-            bindings =
-                <&mt LEFT_GUI ESCAPE>,
-                <&lm 1 LEFT_GUI>,
-                <&lm 1 LS(LGUI)>;
+            bindings = <&lmt LEFT_GUI ESCAPE>, <&lmt LS(LGUI) ESCAPE>;
         };
         skq: skq {
             compatible = "zmk,behavior-sticky-key";
@@ -139,7 +136,7 @@
         lmt: lmt {
             compatible = "zmk,behavior-hold-tap";
             label = "LMT";
-            bindings = <&lm>, <&kp>;
+            bindings = <&lm1>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <150>;
@@ -165,6 +162,12 @@
                 <&kp MACRO_PLACEHOLDER &macro_param_1to1>,
                 <&macro_release>,
                 <&mo MACRO_PLACEHOLDER>;
+        };
+        lm1: lm1 {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&macro_param_1to2 &lm 1 MACRO_PLACEHOLDER>;
+            label = "LM1";
         };
     };
 
