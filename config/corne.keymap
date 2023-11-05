@@ -110,7 +110,7 @@
         hsk: hold_or_sticky_key {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_OR_STICKY_KEY";
-            bindings = <&kp>, <&sk>;
+            bindings = <&kp>, <&skq>;
 
             #binding-cells = <2>;
             tapping-term-ms = <275>;
@@ -124,19 +124,40 @@
             #binding-cells = <0>;
             bindings = <&hsk LGUI LSHIFT>, <&lg>, <&lsg>;
         };
+        skq: skq {
+            compatible = "zmk,behavior-sticky-key";
+            label = "STICKY_QUICK_RELEASE";
+            bindings = <&kp>;
+            #binding-cells = <1>;
+            release-after-ms = <1500>;
+            quick-release;
+            ignore-modifiers;
+        };
     };
 
     macros {
         lg: lg {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&mo 1 &kp LGUI>;
+            bindings =
+                <&macro_press>,
+                <&mo 1 &kp LGUI>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&mo 1 &kp LEFT_GUI>;
+
             label = "LG";
         };
         lsg: lsg {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&mo 1 &kp LGUI &kp LSHIFT>;
+            bindings =
+                <&macro_press>,
+                <&mo 1 &kp LGUI &kp LSHIFT>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&mo 1 &kp LEFT_GUI &kp LSHIFT>;
+
             label = "LSG";
         };
     };
