@@ -194,7 +194,7 @@
                                                &hsk LEFT_GUI LSHIFT  &thumb_lt 2 ENTER  &awm_super    &thumb_lt 1 BACKSPACE  &thumb_lt 3 SPACE  &caps_word
             >;
 
-            label = "DEFAULT_LAYER";
+            label = "DEFAULT";
         };
 
         num_layer {
@@ -204,6 +204,8 @@
 &trans  &trans        &trans        &trans        &trans        &kp F11         &kp F12       &trans        &trans        &trans        &trans        &trans
                                     &trans        &trans        &trans          &trans        &trans        &trans
             >;
+
+            label = "NUM";
         };
 
         sym_layer {
@@ -213,6 +215,8 @@
 &none  &kp TILDE  &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &none
                           &trans    &trans    &trans       &trans     &trans     &trans
             >;
+
+            label = "SYM";
         };
 
         nav_layer {
@@ -222,6 +226,8 @@
 &trans  &trans        &out OUT_USB      &out OUT_BLE       &out OUT_TOG       &trans          &trans          &kp HOME        &kp END       &trans           &trans  &none
                                         &trans             &trans             &trans          &trans          &trans          &trans
             >;
+
+            label = "NAV";
         };
     };
 };
