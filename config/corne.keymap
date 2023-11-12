@@ -210,10 +210,10 @@
 
         sym_layer {
             bindings = <
-&none  &kp EXCL   &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &none
-&none  &kp GRAVE  &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &none
-&none  &kp TILDE  &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &none
-                          &trans    &trans    &trans       &trans     &trans     &trans
+&trans  &kp EXCL   &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &trans
+&trans  &kp GRAVE  &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &trans
+&trans  &kp TILDE  &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &trans
+                           &trans    &trans    &trans       &trans     &trans     &trans
             >;
 
             label = "SYM";
@@ -221,9 +221,9 @@
 
         nav_layer {
             bindings = <
-&trans  &bt BT_CLR    &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG  &trans          &trans          &kp PAGE_DOWN   &kp PAGE_UP   &trans           &trans  &none
-&none   &bt BT_SEL 0  &bt BT_SEL 1      &bt BT_SEL 2       &bt BT_SEL 3       &bt BT_SEL 4    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &none
-&trans  &trans        &out OUT_USB      &out OUT_BLE       &out OUT_TOG       &trans          &trans          &kp HOME        &kp END       &trans           &trans  &none
+&trans  &bt BT_CLR    &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG  &trans          &trans          &kp PAGE_DOWN   &kp PAGE_UP   &trans           &trans  &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1      &bt BT_SEL 2       &bt BT_SEL 3       &bt BT_SEL 4    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
+&trans  &trans        &out OUT_USB      &out OUT_BLE       &out OUT_TOG       &trans          &trans          &kp HOME        &kp END       &trans           &trans  &trans
                                         &trans             &trans             &trans          &trans          &trans          &trans
             >;
 
