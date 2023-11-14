@@ -41,24 +41,19 @@
             key-positions = <20 19>;
         };
 
-        left_bracket {
-            bindings = <&kp LEFT_BRACKET>;
+        double_quote {
+            bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <31 32>;
         };
 
-        right_bracket {
-            bindings = <&kp RIGHT_BRACKET>;
+        underscore {
+            bindings = <&kp UNDERSCORE>;
             key-positions = <32 33>;
         };
 
         grave {
             bindings = <&kp GRAVE>;
             key-positions = <3 4>;
-        };
-
-        backslash {
-            bindings = <&kp BACKSLASH>;
-            key-positions = <3 16>;
         };
 
         at {
@@ -96,9 +91,34 @@
             key-positions = <8 20>;
         };
 
+        backslash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <9 21>;
+        };
+
+        pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <21 33>;
+        };
+
+        tilde {
+            bindings = <&kp TILDE>;
+            key-positions = <15 16>;
+        };
+
         bang {
             bindings = <&kp EXCLAMATION>;
-            key-positions = <9 21>;
+            key-positions = <14 26>;
+        };
+
+        plus {
+            bindings = <&kp PLUS>;
+            key-positions = <20 32>;
+        };
+
+        equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <31 19>;
         };
     };
 
