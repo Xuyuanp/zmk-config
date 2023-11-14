@@ -60,6 +60,46 @@
             bindings = <&kp BACKSLASH>;
             key-positions = <3 16>;
         };
+
+        at {
+            bindings = <&kp AT>;
+            key-positions = <2 14>;
+        };
+
+        hash {
+            bindings = <&kp HASH>;
+            key-positions = <3 15>;
+        };
+
+        dollar {
+            bindings = <&kp DOLLAR>;
+            key-positions = <4 16>;
+        };
+
+        persent {
+            bindings = <&kp PERCENT>;
+            key-positions = <5 17>;
+        };
+
+        caret {
+            bindings = <&kp CARET>;
+            key-positions = <6 18>;
+        };
+
+        ampersand {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <7 19>;
+        };
+
+        star {
+            bindings = <&kp ASTERISK>;
+            key-positions = <8 20>;
+        };
+
+        bang {
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <9 21>;
+        };
     };
 
     behaviors {
