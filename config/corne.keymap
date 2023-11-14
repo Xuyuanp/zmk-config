@@ -76,6 +76,7 @@
             hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35>;
             hold-trigger-on-release;
         };
+
         hmr: hmr {
             compatible = "zmk,behavior-hold-tap";
             label = "HOME_ROW_RIGHT";
@@ -89,6 +90,7 @@
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29>;
             hold-trigger-on-release;
         };
+
         thumb_lt: thumb_lt {
             compatible = "zmk,behavior-hold-tap";
             label = "THUMB_LAYER_TAP";
@@ -100,6 +102,7 @@
             require-prior-idle-ms = <150>;
             flavor = "tap-preferred";
         };
+
         c_const: c_const {
             compatible = "zmk,behavior-caps-word";
             label = "C_STYLE_CONST";
@@ -107,6 +110,7 @@
             continue-list = <UNDERSCORE BACKSPACE>;
             mods = <(MOD_LSFT)>;
         };
+
         hsk: hold_or_sticky_key {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_OR_STICKY_KEY";
@@ -118,12 +122,14 @@
             require-prior-idle-ms = <50>;
             flavor = "tap-preferred";
         };
+
         awm_super: awm_super {
             compatible = "zmk,behavior-tap-dance";
             label = "AWM_SUPER";
             #binding-cells = <0>;
             bindings = <&lmt LEFT_GUI ESCAPE>, <&lmt LS(LGUI) ESCAPE>;
         };
+
         skq: skq {
             compatible = "zmk,behavior-sticky-key";
             label = "STICKY_QUICK_RELEASE";
@@ -133,6 +139,7 @@
             quick-release;
             ignore-modifiers;
         };
+
         lmt: lmt {
             compatible = "zmk,behavior-hold-tap";
             label = "LMT";
@@ -163,6 +170,7 @@
                 <&macro_release>,
                 <&mo MACRO_PLACEHOLDER>;
         };
+
         lm1: lm1 {
             compatible = "zmk,behavior-macro-one-param";
             label = "LM1";
@@ -221,9 +229,9 @@
 
         nav_layer {
             bindings = <
-&trans  &bt BT_CLR    &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG  &trans          &trans          &kp PAGE_DOWN   &kp PAGE_UP   &trans           &trans  &trans
-&trans  &bt BT_SEL 0  &bt BT_SEL 1      &bt BT_SEL 2       &bt BT_SEL 3       &bt BT_SEL 4    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
-&trans  &trans        &out OUT_USB      &out OUT_BLE       &out OUT_TOG       &trans          &trans          &kp HOME        &kp END       &trans           &trans  &trans
+&trans  &bt BT_CLR    &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG  &trans          &trans          &kp PAGE_DOWN   &kp PAGE_UP   &mwh SCROLL_UP    &trans  &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1      &bt BT_SEL 2       &bt BT_SEL 3       &bt BT_SEL 4    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW   &trans  &trans
+&trans  &trans        &out OUT_USB      &out OUT_BLE       &out OUT_TOG       &trans          &trans          &kp HOME        &kp END       &mwh SCROLL_DOWN  &trans  &trans
                                         &trans             &trans             &trans          &trans          &trans          &trans
             >;
 
