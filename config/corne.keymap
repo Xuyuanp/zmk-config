@@ -71,7 +71,7 @@
             key-positions = <4 16>;
         };
 
-        persent {
+        percent {
             bindings = <&kp PERCENT>;
             key-positions = <5 17>;
         };
