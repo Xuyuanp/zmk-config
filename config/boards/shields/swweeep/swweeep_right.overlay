@@ -38,4 +38,4 @@
         , <&pro_micro 19 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
         ;
 
-}
+};
