@@ -1,4 +1,4 @@
-// vim: set ft=devicetree:
+// vim: set ft=devicetree: commentstring=//%s:
 /*
  * Copyright (c) 2020 The ZMK Contributors
  *
