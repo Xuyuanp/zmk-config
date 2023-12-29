@@ -1,8 +1,0 @@
-// vim: set ft=devicetree:
-/*
- * Copyright (c) 2022 The ZMK Contributors
- *
- * SPDX-License-Identifier: MIT
- */
-
-#include "swweeep.dtsi"
