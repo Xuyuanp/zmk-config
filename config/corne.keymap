@@ -200,7 +200,7 @@
         thumb_lt: thumb_lt {
             compatible = "zmk,behavior-hold-tap";
             label = "THUMB_LAYER_TAP";
-            bindings = <&mo>, <&kp>;
+            bindings = <&mo>, <&bspc_del>;
 
             #binding-cells = <2>;
             tapping-term-ms = <280>;
@@ -245,6 +245,16 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <150>;
+        };
+
+        bspc_del: bspc_del {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BSPC_DEL";
+            bindings = <&kp BACKSPACE>, <&kp DEL>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_RSFT)>;
         };
     };
 
