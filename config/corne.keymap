@@ -27,15 +27,15 @@
             layers = <DEFAULT>;
         };
 
-        backspace {
-            bindings = <&kp BACKSPACE>;
+        left_paren {
+            bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <7 8>;
             require-prior-idle-ms = <50>;
             layers = <DEFAULT>;
         };
 
-        delete {
-            bindings = <&kp DEL>;
+        right_paren {
+            bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <9 8>;
             require-prior-idle-ms = <50>;
             layers = <DEFAULT>;
