@@ -27,20 +27,6 @@
             layers = <DEFAULT>;
         };
 
-        left_paren {
-            bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <7 8>;
-            require-prior-idle-ms = <50>;
-            layers = <DEFAULT>;
-        };
-
-        right_paren {
-            bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <9 8>;
-            require-prior-idle-ms = <50>;
-            layers = <DEFAULT>;
-        };
-
         minus {
             bindings = <&kp MINUS>;
             key-positions = <20 21>;
