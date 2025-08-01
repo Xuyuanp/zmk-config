@@ -17,6 +17,14 @@
 #define NAV     3
 
 / {
+    chosen {
+        zmk,battery = &vbatt;
+    };
+
+    vbatt: vbatt {
+        compatible = "zmk,battery-nrf-vddh";
+    };
+
     combos {
         compatible = "zmk,combos";
 
